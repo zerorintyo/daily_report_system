@@ -134,3 +134,7 @@ select {
 h1 a {
     color: #eeeeee;
 }
+
+pre {
+    font-family: "Hiragino Kaku Gothic Pro",Meiryo,"MSPGothic",Helvetica,Arial,sas-serif;
+}
