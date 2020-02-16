@@ -138,3 +138,7 @@ h1 a {
 pre {
     font-family: "Hiragino Kaku Gothic Pro",Meiryo,"MSPGothic",Helvetica,Arial,sas-serif;
 }
+
+h3 {
+    font-size: larger;
+}
