@@ -142,3 +142,13 @@ pre {
 h3 {
     font-size: larger;
 }
+
+table#customer_list th {
+    width: 30%;
+    padding: 10px 2%;
+}
+
+table#customer_list td {
+    width: 29%;
+    padding: 10px 2%;
+}
