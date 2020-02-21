@@ -24,6 +24,12 @@
                             </td>
                         </tr>
                         <tr>
+                            <th>商談状況</th>
+                            <td>
+                                <pre><c:out value="${report.business_situation}" /></pre>
+                            </td>
+                        </tr>
+                        <tr>
                             <th>登録日時</th>
                             <td>
                                 <fmt:formatDate value="${report.created_at}" pattern="yyyy-MM-dd HH:mm:ss" />
