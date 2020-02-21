@@ -55,6 +55,10 @@ public class Report {
     @Column(name = "content", nullable = false)
     private String content;
 
+    @Lob
+    @Column(name = "business_situation", nullable = false)
+    private String business_situation;
+
     @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
 
@@ -101,6 +105,14 @@ public class Report {
         this.content = content;
     }
 
+    public String getBusiness_situation() {
+        return business_situation;
+    }
+
+    public void setBusiness_situation(String business_situation) {
+        this.business_situation = business_situation;
+    }
+
     public Timestamp getCreated_at() {
         return created_at;
     }
@@ -116,4 +128,6 @@ public class Report {
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
+
+
 }
