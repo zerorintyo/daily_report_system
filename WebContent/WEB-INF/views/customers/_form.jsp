@@ -10,7 +10,7 @@
 
     </div>
 </c:if>
-<label for="customer_name">顧客名</label><br />
+<label for="customer_name">取引先名</label><br />
 <input type="text" name="customer_name" value="${costomer.costomer_name}" />
 <br /><br />
 

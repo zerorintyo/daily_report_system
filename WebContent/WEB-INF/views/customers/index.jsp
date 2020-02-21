@@ -11,7 +11,7 @@
         <table id="customer_list">
             <tbody>
                 <tr>
-                    <th>顧客名</th>
+                    <th>取引先名</th>
                     <th>登録者</th>
                     <th>操作</th>
                 </tr>
