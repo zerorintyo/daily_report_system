@@ -6,15 +6,15 @@ import java.util.List;
 import models.Customer;
 
 public class CustomerValidator {
-    public static List<String> validate(Customer r) {
+    public static List<String> validate(Customer c) {
         List<String>errors = new ArrayList<String>();
 
-        String customer_name_error = _validateCustomer_name(r.getCustomer_name());
+        String customer_name_error = _validateCustomer_name(c.getCustomer_name());
         if(!customer_name_error.equals("")) {
             errors.add(customer_name_error);
         }
 
-        String content_error = _validateContent(r.getContent());
+        String content_error = _validateContent(c.getContent());
         if(!content_error.equals("")) {
             errors.add(content_error);
         }

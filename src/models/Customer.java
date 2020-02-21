@@ -18,11 +18,11 @@ import javax.persistence.Table;
 @NamedQueries({
     @NamedQuery(
             name = "getAllCustomers",
-            query = "SELECT r FROM Customer AS r ORDER BY r.id DESC"
+            query = "SELECT c FROM Customer AS c ORDER BY c.id DESC"
             ),
     @NamedQuery(
             name = "getCustomersCount",
-            query = "SELECT COUNT(r) FROM Customer AS r"
+            query = "SELECT COUNT(c) FROM Customer AS c"
             ),
 })
 @Entity
@@ -61,7 +61,7 @@ public class Customer {
         return customer_name;
     }
 
-    public void setCustomer_naem(String customer_name) {
+    public void setCustomer_name(String customer_name) {
         this.customer_name = customer_name;
     }
 

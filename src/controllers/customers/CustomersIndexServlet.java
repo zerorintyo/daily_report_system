@@ -35,10 +35,12 @@ public class CustomersIndexServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         EntityManager em = DBUtil.createEntityManager();
 
-        int page = 1;
+        int page;
         try{
             page = Integer.parseInt(request.getParameter("page"));
-        } catch(NumberFormatException e) { }
+        } catch(Exception e) {
+            page = 1;
+        }
         List<Customer> customers = em.createNamedQuery("getAllCustomers", Customer.class)
                                      .setFirstResult(15 * (page - 1))
                                      .setMaxResults(15)
