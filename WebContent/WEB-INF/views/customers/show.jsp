@@ -38,9 +38,8 @@
                     </tbody>
                 </table>
 
-                <c:if test="${sessionScope.login_employee.id == customer.employee.id}">
-                    <p><a href="<c:url value="/customers/edit?id=${customer.id}" />">この顧客情報を編集する</a></p>
-                </c:if>
+                <p><a href="<c:url value="/customers/edit?id=${customer.id}" />">この顧客情報を編集する</a></p>
+
             </c:when>
             <c:otherwise>
                 <h2>お探しのデータは見つかりませんでした。</h2>
